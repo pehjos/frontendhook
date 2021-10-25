@@ -1,0 +1,261 @@
+.appbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    flex: 1;
+    position: fixed;
+    width: 100%;
+    z-index:100;
+    top: 0;
+    
+    border-bottom: 1px solid #333;
+    }
+    .app_left{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin: 10px;
+    flex: 1;
+    
+    }
+    .app_leftsearch{
+    align-items: center;
+    
+    
+    }
+    
+    .app_leftname{
+    
+    display: flex;
+    padding: 10px;
+    
+    }
+    .app_right{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    
+    }
+    @media(max-width:700px){
+    
+    .active_link>.MuiSvgIcon-root{
+    color: #2196f3;
+    
+    }
+    .toolbar{
+    background-color: #2196f3;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 170px;
+    }
+    .child>p{
+     font-size: 20px;
+     color: #333;
+       }
+       .child>a{
+          font-size: 20px;
+          color: white;
+        text-decoration: none;
+            }
+       .child>.MuiSvgIcon-root{
+          font-size: 26px;
+          color: white;
+          margin-top: 20px;
+    
+            }
+    .active_link>p{
+     
+       
+       color: #2196f3;
+    
+    
+       }
+    .app_right{
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    margin-top: 10px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    }
+    .app_right::-webkit-scrollbar {
+       background-color: whitesmoke;
+       scroll-behavior: smooth;
+      display: none;
+       
+       
+       }
+    
+    .appbar{
+    display: block;
+    
+    
+    box-shadow: 0px 5px 8px -9px rgba(0, 0, 0, 0.75);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    }
+    
+    }
+    .app_left{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    margin: 6px;
+    flex: 1;
+    
+    }
+    .app_leftname>h2{
+    font-family: 'opensans-bold';
+    font-weight:300 ;
+    color: khaki;
+    font-style: italic;
+    }
+    .app_leftsearch>.MuiSvgIcon-root{
+    
+    color: gray;
+    
+    }
+    .app_leftsearch{
+    
+    display: flex;
+    align-items: center;
+    background: #eff2f5;
+    padding: 8px;
+    
+    border-radius: 33px;
+    
+    
+    }
+    .app_leftsearch>input{
+    border: none;
+    background-color: transparent;
+    outline-width: 0;
+    }
+    .app_right>.MuiIconButton-root{
+    font-size: 2px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    }
+    .search{
+    background:lightgray;
+    color:black;
+    border-radius: 50%;
+    
+    
+    
+    }
+    .topsearch{
+    background-color: #2196f3;
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin-top: -2px;
+    margin-bottom: -24px;
+    
+    }
+    
+    
+    .topsearch>p{
+        font-weight: bolder;
+     font-size: 25px;
+      font-family: 'Commissioner', sans-serif;
+      font-family: 'Quicksand', sans-serif;
+         font-weight: bold;
+          color: white;
+         margin: 6px;
+      }
+    
+    .avatar{
+    background-color: #2196f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    flex-direction: column;
+    color: whitesmoke;
+    }
+    
+    .menutext{
+    
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+    
+    }
+    
+    
+    
+    
+    .iconName{
+    
+    cursor: pointer;
+    margin-bottom:-4px;
+    font-size: 14px;
+    margin-top: -10px;
+    display: flex;
+    
+    flex-direction: column;
+    
+    
+    
+    }
+    
+    .notificationic{
+    width: 30px;
+    height: 30px;
+    
+    }
+    .username{
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    
+    
+    }
+    .app_leftname>h5{
+    
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    
+    font-size: 30px;
+    
+    }
+    .iconName>a>p{
+    font-size: 14px;
+    font-family: 'Commissioner', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin-bottom: -1px;
+    
+    }
+    
+    
+    .iconName>a{
+    text-decoration: none;
+    color: gray;
+    
+    }
+    
+    
+    .iconName>.MuiSvgIcon-root{
+      color: gray;
+    
+       }
+    
+    

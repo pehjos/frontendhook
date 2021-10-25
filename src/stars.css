@@ -1,0 +1,23 @@
+.stars{
+
+    width: 100%;
+    
+    
+    }
+    .star__pages{
+    
+        width: 100%;
+    
+    }
+    
+    .star__pages>.MuiTabs-root{
+    
+       color: #333;
+    
+    }
+    
+    .star__pages>.MuiTabs-indicator{
+    
+      background-color: blue;
+     
+     }
