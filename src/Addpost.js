@@ -22,14 +22,15 @@ export default withRouter(({ history,currentId,setCurrentId }) => {
   data.append("file", image)
   data.append("upload_preset", "spkpypwc")
   data.append("cloud_name","pehjos-inc")
-  fetch("  https://api.cloudinary.com/v1_1/pehjos-inc/image/upload",{
+  fetch(" https://api.cloudinary.com/v1_1/pehjos-inc/image/upload",{
   method:"post",
-  body: data,
+  body: data, 
   mode:'cors'
   })
   .then(resp => resp.json())
   .then(data => {
-  setUrl(data.url)
+  setUrl(data.secure_url)
+console.log(data.secure_url)
   })
   .catch(err => console.log(err))
   }
@@ -42,18 +43,21 @@ export default withRouter(({ history,currentId,setCurrentId }) => {
   data.append("file", vid)
   data.append("upload_preset", "spkpypwc")
   data.append("cloud_name","pehjos-inc")
-  fetch("  https://api.cloudinary.com/v1_1/pehjos-inc/video/upload",{
+  fetch("https://api.cloudinary.com/v1_1/pehjos-inc/video/upload",{
   method:"post",
   body: data,
   mode:'cors'
   })
   .then(resp => resp.json())
   .then(data => {
-    setUrlVid(data.url)
+    setUrlVid(data.secure_url)
+    console.log(data.secure_url)
+ 
   })
   .catch(err => console.log(err))
   }
-  
+  //function
+
 
 
 
@@ -107,7 +111,8 @@ document.getElementById('photo').style.pointerEvents="initial"
 
 }
 const handleEmtyInput=({target})=>{
-
+setUrl('')
+setUrlVid('')
 const files=target.files
 target.value=''
 }
@@ -151,8 +156,8 @@ setTags(true)
     title:'',
     message:'',
     tags:'',
-    // image:'',
-    // video:'',
+   image:'',
+   video:'',
     accountType:'',
     description:'', });
   };
